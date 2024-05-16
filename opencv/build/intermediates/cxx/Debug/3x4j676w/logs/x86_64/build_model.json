@@ -1,0 +1,173 @@
+{
+  "abi": "X86_64",
+  "info": {
+    "abi": "X86_64",
+    "bitness": 64,
+    "deprecated": false,
+    "default": true
+  },
+  "cxxBuildFolder": "D:\\Proyecto_Vison\\opencv\\.cxx\\Debug\\3x4j676w\\x86_64",
+  "soFolder": "D:\\Proyecto_Vison\\opencv\\build\\intermediates\\cxx\\Debug\\3x4j676w\\obj\\x86_64",
+  "soRepublishFolder": "D:\\Proyecto_Vison\\opencv\\build\\intermediates\\cmake\\debug\\obj\\x86_64",
+  "abiPlatformVersion": 21,
+  "cmake": {
+    "effectiveConfiguration": {
+      "inheritEnvironments": [],
+      "variables": []
+    }
+  },
+  "variant": {
+    "buildSystemArgumentList": [
+      "-DANDROID_STL\u003dc++_shared"
+    ],
+    "cFlagsList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": [
+      "opencv_jni_shared"
+    ],
+    "implicitBuildTargetSet": [
+      "opencv_jni_shared"
+    ],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "module": {
+      "cxxFolder": "D:\\Proyecto_Vison\\opencv\\.cxx",
+      "intermediatesBaseFolder": "D:\\Proyecto_Vison\\opencv\\build\\intermediates",
+      "intermediatesFolder": "D:\\Proyecto_Vison\\opencv\\build\\intermediates\\cxx",
+      "gradleModulePathName": ":opencv",
+      "moduleRootFolder": "D:\\Proyecto_Vison\\opencv",
+      "moduleBuildFile": "D:\\Proyecto_Vison\\opencv\\build.gradle",
+      "makeFile": "D:\\Proyecto_Vison\\opencv\\libcxx_helper\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "ndkFolder": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620",
+      "ndkVersion": "23.1.7779620",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 31,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29,
+          "R": 30,
+          "S": 31
+        }
+      },
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "cmakeToolchainFile": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\build\\cmake\\android.toolchain.cmake",
+      "cmake": {
+        "isValidCmakeAvailable": true,
+        "cmakeExe": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\cmake.exe",
+        "minimumCmakeVersion": "3.18.1"
+      },
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
+          "ARM64_V8A": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+          "X86": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
+          "X86_64": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      },
+      "project": {
+        "rootBuildGradleFolder": "D:\\Proyecto_Vison",
+        "sdkFolder": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isPrefabEnabled": false
+      },
+      "outputOptions": [],
+      "ninjaExe": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\ninja.exe"
+    },
+    "prefabClassPaths": [],
+    "prefabPackages": [],
+    "prefabPackageConfigurations": [],
+    "stlType": "c++_shared",
+    "optimizationTag": "Debug"
+  },
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "prefabFolder": "D:\\Proyecto_Vison\\opencv\\.cxx\\Debug\\3x4j676w\\prefab\\x86_64",
+  "isActiveAbi": true,
+  "fullConfigurationHash": "3x4j676w5z1v1g6y2o2s3o1n306j6z6g735b1b3p1s5t2g6863185q3c4u705z4o",
+  "configurationArguments": [
+    "-HD:\\Proyecto_Vison\\opencv\\libcxx_helper",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_SYSTEM_VERSION\u003d21",
+    "-DANDROID_PLATFORM\u003dandroid-21",
+    "-DANDROID_ABI\u003dx86_64",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64",
+    "-DANDROID_NDK\u003dC:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620",
+    "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620",
+    "-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\build\\cmake\\android.toolchain.cmake",
+    "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\Proyecto_Vison\\opencv\\build\\intermediates\\cxx\\Debug\\3x4j676w\\obj\\x86_64",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\Proyecto_Vison\\opencv\\build\\intermediates\\cxx\\Debug\\3x4j676w\\obj\\x86_64",
+    "-DCMAKE_BUILD_TYPE\u003dDebug",
+    "-BD:\\Proyecto_Vison\\opencv\\.cxx\\Debug\\3x4j676w\\x86_64",
+    "-GNinja",
+    "-DANDROID_STL\u003dc++_shared"
+  ],
+  "stlLibraryFile": "C:\\Users\\guama\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so",
+  "intermediatesParentFolder": "D:\\Proyecto_Vison\\opencv\\build\\intermediates\\cxx\\Debug\\3x4j676w"
+}
