@@ -6,24 +6,26 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/open_camera_button"
+        android:id="@+id/switch_camera_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Abrir Cámara"
+        android:text="Cambiar Cámara"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
 
     <Button
-        android:id="@+id/send_image_button"
+        android:id="@+id/switch_draw_mode_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar Imagen"
+        android:text="Cambiar Modo de Dibujo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:visibility="gone" />
+        android:layout_below="@id/switch_camera_button"
+        android:layout_marginTop="20dp" />
 
     <org.opencv.android.JavaCameraView
         android:id="@+id/camera_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/switch_draw_mode_button"
+        android:visibility="visible" />
 </RelativeLayout>

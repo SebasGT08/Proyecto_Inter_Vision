@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="21"
-6-->D:\Proyecto_Vison\opencv\java\AndroidManifest.xml
+6-->/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/Proyecto_Inter_Vision/opencv/java/AndroidManifest.xml
 7        android:targetSdkVersion="21" />
-7-->D:\Proyecto_Vison\opencv\java\AndroidManifest.xml
+7-->/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/Proyecto_Inter_Vision/opencv/java/AndroidManifest.xml
 8
 9</manifest>

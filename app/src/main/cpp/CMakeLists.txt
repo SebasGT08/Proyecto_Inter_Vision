@@ -8,7 +8,7 @@ cmake_minimum_required(VERSION 3.18.1)
 project("proyecto_vison")
 
 # Ruta al directorio de OpenCV
-set(OpenCV_DIR D:/Librerias/OpenCV_4_9/OpenCV-android-sdk/sdk/native/jni)
+set(OpenCV_DIR /home/sebas/Librerias/OpenCV-android-sdk/sdk/native/jni)
 
 # Buscar OpenCV
 find_package(OpenCV REQUIRED)
