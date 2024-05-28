@@ -88,7 +88,7 @@ public class MainActivity extends CameraActivity implements CameraBridgeViewBase
 
         // Inicializar la conexión de socket
         try {
-            socket = IO.socket("http://192.168.18.250:5000");
+            socket = IO.socket("http://192.168.83.169:5000");
             socket.on(Socket.EVENT_CONNECT, new Emitter.Listener() {
                 @Override
                 public void call(Object... args) {

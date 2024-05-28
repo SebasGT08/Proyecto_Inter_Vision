@@ -33,7 +33,7 @@ void dibujarGafas(Mat& imagen, Point centroOjoIzquierdo, Point centroOjoDerecho)
 
     int altoPatron = 5;
     int anchoPatron = 26;
-    Scalar color = Scalar(0, 0, 0); // Color negro para las gafas
+    Scalar color = Scalar(255, 0, 255); // Color negro para las gafas
 
     // Calcular el centro de las gafas
     Point centroGafas = (centroOjoIzquierdo + centroOjoDerecho) * 0.5;
@@ -106,18 +106,25 @@ void detectar(Mat& frame, bool modoDibujarGafas) {
                 return a.x < b.x;
             });
 
-            Point centroOjoIzquierdo(rostros[i].x + ojos[0].x + ojos[0].width / 2, rostros[i].y + ojos[0].y + ojos[0].height / 2);
-            Point centroOjoDerecho(rostros[i].x + ojos[1].x + ojos[1].width / 2, rostros[i].y + ojos[1].y + ojos[1].height / 2);
+            // Validar la posición vertical de los ojos
+            if (ojos[0].y < rostros[i].height / 2 && ojos[1].y < rostros[i].height / 2) {
+                Point centroOjoIzquierdo(rostros[i].x + ojos[0].x + ojos[0].width / 2, rostros[i].y + ojos[0].y + ojos[0].height / 2);
+                Point centroOjoDerecho(rostros[i].x + ojos[1].x + ojos[1].width / 2, rostros[i].y + ojos[1].y + ojos[1].height / 2);
 
-            if (modoDibujarGafas) {
-                // Dibujar las gafas
-                dibujarGafas(frame, centroOjoIzquierdo, centroOjoDerecho);
-            } else {
-                // Dibujar contornos de los ojos
-                for (size_t j = 0; j < ojos.size(); j++) {
-                    Point centroOjo(rostros[i].x + ojos[j].x + ojos[j].width / 2, rostros[i].y + ojos[j].y + ojos[j].height / 2);
-                    int radio = cvRound((ojos[j].width + ojos[j].height) * 0.25);
-                    circle(frame, centroOjo, radio, Scalar(255, 0, 0), 4);
+                // Validar la distancia entre los ojos
+                double distanciaOjos = norm(centroOjoIzquierdo - centroOjoDerecho);
+                if (distanciaOjos > rostros[i].width * 0.2 && distanciaOjos < rostros[i].width * 0.6) {
+                    if (modoDibujarGafas) {
+                        // Dibujar las gafas
+                        dibujarGafas(frame, centroOjoIzquierdo, centroOjoDerecho);
+                    } else {
+                        // Dibujar contornos de los ojos
+                        for (size_t j = 0; j < ojos.size(); j++) {
+                            Point centroOjo(rostros[i].x + ojos[j].x + ojos[j].width / 2, rostros[i].y + ojos[j].y + ojos[j].height / 2);
+                            int radio = cvRound((ojos[j].width + ojos[j].height) * 0.25);
+                            circle(frame, centroOjo, radio, Scalar(255, 0, 0), 4);
+                        }
+                    }
                 }
             }
         }
